@@ -2,7 +2,10 @@ const express = require("express");
 
 const PORT = process.env.PORT || 3001;
 
+const express = require('express');
+
 const app = express();
+
 
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
@@ -16,7 +19,6 @@ app.listen(PORT, () => {
 
 
 const path = require('path');
-const express = require('express');
 
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
