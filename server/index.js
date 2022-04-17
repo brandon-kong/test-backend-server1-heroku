@@ -9,7 +9,10 @@ app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
   });
   
-  
+  app.get("/hi", (req, res) => {
+    res.json({ message: "bye" });
+  });
+
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
